@@ -19,6 +19,8 @@
 #include <map>
 #include <bitset>
 
+#include <fstream>
+
 using namespace std;
 
 typedef enum {
@@ -36,6 +38,11 @@ typedef enum {
 } HL_DataType;
 
 int main(int argc, char ** argv){
+
+    ofstream myfile;
+    myfile.open ("/home/db/example.txt");
+    myfile << "Writing this to a file.\n";
+    myfile.close();
 
     int senderF = atoi(argv[1]);
     int commandF = atoi(argv[2]);
