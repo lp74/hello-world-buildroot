@@ -19,7 +19,11 @@
 #include <map>
 #include <bitset>
 
+#include <getopt.h>
 #include <fstream>
+
+#include <HL/commands.h>
+
 
 using namespace std;
 
@@ -39,6 +43,8 @@ typedef enum {
 
 int main(int argc, char ** argv){
 
+    HL_uc74_getMyIndex();
+    
     ofstream myfile;
     myfile.open ("/home/db/example.txt");
     myfile << "Writing this to a file.\n";
