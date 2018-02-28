@@ -27,6 +27,7 @@
 
 using namespace std;
 
+/*
 typedef enum {
     HL_Float = 0,     // Float (single precision) value
     HL_UInt32 = 10,   // UInt (32 bit) value
@@ -40,7 +41,7 @@ typedef enum {
     HL_String = 110,  // ASCII string (4 ch) value
     HL_Bool = 120,    // Bool value
 } HL_DataType;
-
+*/
 int main(int argc, char ** argv){
 
     HL_uc74_getMyIndex();
